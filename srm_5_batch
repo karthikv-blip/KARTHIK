@@ -1,0 +1,41 @@
+Aim:
+
+The aim of this project is to design and simulate a smart IoT-based energy management system in Cisco Packet Tracer that charges a battery using renewable solar energy and automatically controls the connected devices based on the available energy.
+
+Problem Statement:
+
+The rising global demand for electricity and the depletion of fossil fuel resources have created a need for renewable energy solutions. Solar energy is one of the most promising alternatives; however, efficient utilization of solar energy requires intelligent systems that can monitor power levels and manage loads accordingly. Without automation, excess energy may be wasted, and low-energy conditions may lead to device failures.
+This project attempts to solve this problem by simulating a solar panel system that charges a virtual battery and controls a connected light source based on the solar power availability. The simulation demonstrates how IoT-based conditional automation can optimize energy usage in smart homes and industrial applications.
+
+Scope of the Solution
+
+* Can be extended to smart homes, where devices such as lights, fans, and appliances are controlled automatically based on renewable energy availability.
+* Can be implemented in industrial IoT applications, where machines can be scheduled to operate when solar energy is sufficient, reducing dependency on grid electricity.
+* Provides a low-cost training model for students and researchers to understand IoT automation, renewable energy integration, and smart power management.
+* Can be combined with cloud-based IoT dashboards to monitor energy usage remotely and make data-driven decisions.
+
+Required Components
+
+Software/IDE:
+
+Cisco Packet Tracer (version 8.2.2 or higher)
+Optional: GitHub (for documentation and version control)
+Hardware (Simulated in Cisco Packet Tracer):
+Solar Panel – Generates energy (Wh values).
+Battery/Light Device – Acts as the load consuming solar energy.
+Home Gateway (DLC100) – Connects IoT devices and enables remote monitoring.
+Tablet/PC – Used to configure IoT conditions and monitor energy status.
+IoT Server (inbuilt in Packet Tracer) – Used for automation and condition-based control.
+
+Simulated Circuit Explanation
+
+The simulation is designed in Cisco Packet Tracer as follows:
+
+A Solar Panel generates variable energy (measured in Wh).
+A Light (IoT device) is connected via the Home Gateway to represent the energy-consuming load.
+A Tablet PC is used to access the IoT server and define automation conditions.
+
+The following conditions are programmed:
+If solar status is 0–10 Wh, the light turns OFF (battery too low).
+If solar status is 11–50 Wh, the light is set to DIM (battery partially charged).
+If solar status is above 50 Wh, the light turns ON fully (battery sufficiently charged).
